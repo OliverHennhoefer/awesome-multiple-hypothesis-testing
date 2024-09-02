@@ -40,17 +40,17 @@ Candidates are hypotheses that are more likely to be _discoveries_:
 
 - At each time $t$, define the number of _candidates_ after the _j_-th rejection as
 
-$$C_{j+} = C_{j+}(t) = \sum_{i = \tau_j + 1}^{t-1} C_i$$
+$`C_{j+} = C_{j+}(t) = \sum_{i = \tau_j + 1}^{t-1} C_i`$
 
 with $C_t = 1\{p_t \leq \lambda \}$ as the indicator for candidacy.
 
 - Subsequent test levels are chosen as $\alpha_t = \min\{ \lambda, \tilde{\alpha}_t\}$ with the exception
 
-$$\alpha_1 = \min\{(1 - \lambda)\gamma_1 w_0, \lambda\}$$
+$`\alpha_1 = \min\{(1 - \lambda)\gamma_1 w_0, \lambda\}`$
 
 and subsequent
 
-$$\tilde{\alpha}_t = (1 - \lambda) [w_0 \gamma_{t-C_{0+}} + (\alpha - w_0)\gamma_{t-\tau_1-C_{1+}} +  \alpha \sum_{j \geq 2}  \gamma_{t - \tau_j- C_{j+}}]$$
+$`\tilde{\alpha}_t = (1 - \lambda) [w_0 \gamma_{t-C_{0+}} + (\alpha - w_0)\gamma_{t-\tau_1-C_{1+}} +  \alpha \sum_{j \geq 2}  \gamma_{t - \tau_j- C_{j+}}]`$
 
 Typically, $\gamma_j \propto j^{-1.6}$ is used as the $\gamma$ sequence.
 
@@ -68,11 +68,11 @@ ADDIS depends on the constants $W_0$, $\lambda$ and $\tau$, with $W_0$ as the in
 The new parameter $\tau \in (0,1]$ defines the threshold for discarding (conservative) _p_-values as _p_-values $\geq \tau$ are _discarded_ (i.e. not considered for testing, with no wealth invested).
 As for SAFFRON, the parameter $\lambda \in [0,\tau)$  defines the threshold for _candidates_ as ADDIS will never reject _p_values $\geq \lambda$.
 
-$$\alpha_t = \min\{\lambda, \tilde{\alpha}_t\}$$
+$`\alpha_t = \min\{\lambda, \tilde{\alpha}_t\}`$
 
 $`\tilde{\alpha}_t = (\tau - \lambda)[w_0 \gamma_{S^t-C_{0+}} + (\alpha - w_0)\gamma_{S^t - \kappa_1^*-C_{1+}} +  \alpha \sum_{j \geq 2} \gamma_{S^t - \kappa_j^* - C_{j+}}`$
 
-$$\kappa_j = \min\{i \in [t-1] : \sum_{k \leq i}  1 \{p_k \leq \alpha_k\} \geq j\}, \kappa_j^* = \sum_{i \leq \kappa_j} 1 \{p_i \leq \tau \}, S^t = \sum_{i < t} 1 \{p_i \leq \tau \}, C_{j+} = \sum_{i = \kappa_j + 1}^{t-1} 1\{p_i \leq \lambda\}$$
+$`\kappa_j = \min\{i \in [t-1] : \sum_{k \leq i}  1 \{p_k \leq \alpha_k\} \geq j\}, \kappa_j^* = \sum_{i \leq \kappa_j} 1 \{p_i \leq \tau \}, S^t = \sum_{i < t} 1 \{p_i \leq \tau \}, C_{j+} = \sum_{i = \kappa_j + 1}^{t-1} 1\{p_i \leq \lambda\}`$
 
 Typically, $\gamma_j \propto j^{-1.6}$ is used as the $\gamma$ sequence.
 
