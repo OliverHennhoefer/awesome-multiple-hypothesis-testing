@@ -31,7 +31,7 @@ Extensive collection of resources on the topic of **multiple hypothesis testing*
 #### Benjamini-Yekutieli Procedure
 [The Control of the False Discovery Rate in Multiple Testing Under Dependency](https://projecteuclid.org/journals/annals-of-statistics/volume-29/issue-4/The-control-of-the-false-discovery-rate-in-multiple-testing/10.1214/aos/1013699998.full) [[BenjaminiYekutieli2001]](#benjaminiyekutieli2001)
 
-### 1.4 <ins>Seminal: _Sequential_</ins>
+### 1.4 Seminal: _Sequential_
 
 #### [SAFFRON](https://proceedings.mlr.press/v80/ramdas18a/ramdas18a.pdf)
 <ins>S</ins>erial estimate of the <ins>A</ins>lpha <ins>F</ins>raction that is <ins>F</ins>utilely <ins>R</ins>ationed <ins>O</ins>n true <ins>N</ins>ull hypotheses
