@@ -3,7 +3,7 @@ Extensive collection of resources on the topic of **multiple hypothesis testing*
 
 ***
 
-## <ins>Publications</ins>
+## 1 Publications
 
 ### <ins>Philosophical</ins>
 
@@ -94,12 +94,12 @@ Typically, $\gamma_j \propto j^{-1.6}$ is used as the $\gamma$ sequence.
 
 ***
 
-## Presentations
+## 2 Presentations
 - [NIPS21: Online False Discovery Rate Control for Anomaly Detection in Time-Series](https://slideslive.com/38968279/online-false-discovery-rate-control-for-anomaly-detection-in-time-series?ref=speaker-17986)
 
 ***
 
-## Software Packages
+## 3 Software Packages
 [R: onlineFDR](https://academic.oup.com/bioinformatics/article/35/20/4196/5380770) [[Robertson2019]](#robertson19)
 
 ### Repositories
@@ -116,7 +116,7 @@ Typically, $\gamma_j \propto j^{-1.6}$ is used as the $\gamma$ sequence.
 ***
 ***
 
-## References
+## 4 References
 
 <a id="tuckey1991">[Tuckey1991]</a> Tukey, J. W. (1991). **The Philosophy of Multiple Comparisons**. Statistical Science, 6(1), 100-116.
 
