@@ -5,13 +5,13 @@ Extensive collection of resources on the topic of **multiple hypothesis testing*
 
 ## 1 Publications
 
-### <ins>Philosophical</ins>
+### 1.1 Philosophical
 
 [The Philosophy of Multiple Comparisons](https://projecteuclid.org/journals/statistical-science/volume-6/issue-1/The-Philosophy-of-Multiple-Comparisons/10.1214/ss/1177011945.full) [[Tuckey1991]](#tuckey1991)
 
 [John W. Tukey's Contributions to Multiple Comparisons](https://projecteuclid.org/journals/annals-of-statistics/volume-30/issue-6/John-W-Tukeys-contributions-to-multiple-comparisons/10.1214/aos/1043351247.full) [[Benjamini2002]](#benjamini2002)
 
-### <ins>Introductory</ins>
+### 1.2 Introductory
 
 [Multiple Testing](https://www.gs.washington.edu/academics/courses/akey/56008/lecture/lecture10.pdf) (Lecture Slides; [UW Genomics Sciences](https://www.gs.washington.edu/index.htm))
 
@@ -21,7 +21,7 @@ Extensive collection of resources on the topic of **multiple hypothesis testing*
 
 [The Theory behind 'onineFDR'](https://bioconductor.org/packages/devel/bioc/vignettes/onlineFDR/inst/doc/theory.html#SAFFRON_gamma) (Website; Documentation)
 
-### <ins>Seminal: _Static_</ins>
+### 1.3 Seminal: _Static_
 
 #### Bonnferroni-Correction
 
@@ -31,7 +31,7 @@ Extensive collection of resources on the topic of **multiple hypothesis testing*
 #### Benjamini-Yekutieli Procedure
 [The Control of the False Discovery Rate in Multiple Testing Under Dependency](https://projecteuclid.org/journals/annals-of-statistics/volume-29/issue-4/The-control-of-the-false-discovery-rate-in-multiple-testing/10.1214/aos/1013699998.full) [[BenjaminiYekutieli2001]](#benjaminiyekutieli2001)
 
-### <ins>Seminal: _Sequential_</ins>
+### 1.4 <ins>Seminal: _Sequential_</ins>
 
 #### [SAFFRON](https://proceedings.mlr.press/v80/ramdas18a/ramdas18a.pdf)
 <ins>S</ins>erial estimate of the <ins>A</ins>lpha <ins>F</ins>raction that is <ins>F</ins>utilely <ins>R</ins>ationed <ins>O</ins>n true <ins>N</ins>ull hypotheses
@@ -86,7 +86,7 @@ Typically, $\gamma_j \propto j^{-1.6}$ is used as the $\gamma$ sequence.
 
 </details>
 
-### <ins>Anomaly Detection in Time-Series</ins>
+### 1.5 Anomaly Detection in Time-Series
 
 - [Online False Discovery Rate Control for Anomaly Detection in Time-Series](https://proceedings.neurips.cc/paper_files/paper/2021/file/def130d0b67eb38b7a8f4e7121ed432c-Paper.pdf) 🔥
 - [Online FDR Controlled Anomaly Detection for Streaming Time Series](https://kdd-milets.github.io/milets2019/papers/milets19_paper_6.pdf)
@@ -102,13 +102,13 @@ Typically, $\gamma_j \propto j^{-1.6}$ is used as the $\gamma$ sequence.
 ## 3 Software Packages
 [R: onlineFDR](https://academic.oup.com/bioinformatics/article/35/20/4196/5380770) [[Robertson2019]](#robertson19)
 
-### Repositories
+### 3.1 Repositories
 
 [Original Repository: 'onlineFDR'](https://github.com/dsrobertson/onlineFDR) [[Robertson2019]](#robertson19)
 [Original Repository: SAFFRON](https://github.com/JINJINT/ADDIS) (see [[RamdasZrnic2018]](#ramdaszrnic2018))<br/>
 [Original Repository: ADDIS](https://github.com/JINJINT/ADDIS) (see [[TianRamdas2019]](#tianramdas2019))
 
-### Miscellaneous
+### 3.2 Miscellaneous
 
 [onlineFDRExplore](https://mrc-bsu.shinyapps.io/onlineFDRexplore/) (based on 'onlineFDR')<br/>
 [onlineFWERExplore](https://mrc-bsu.shinyapps.io/onlineFWERexplore/) (based on 'onlineFDR')
