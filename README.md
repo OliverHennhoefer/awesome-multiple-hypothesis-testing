@@ -72,7 +72,7 @@ $$\alpha_t = \min\{\lambda, \tilde{\alpha}_t\}$$
 
 $$\tilde{\alpha}_t = (\tau - \lambda)[w_0 \gamma_{S^t-C_{0+}} + (\alpha - w_0)\gamma_{S^t - \kappa_1^*-C_{1+}} +  \alpha \sum_{j \geq 2} \gamma_{S^t - \kappa_j^* - C_{j+}}$$
 
-$$\kappa_j = \min\{i \in [t-1] : \sum_{k \leq i}  1 \{p_k \leq \alpha_k\} \geq j\}, \;  \kappa_j^* = \sum_{i \leq \kappa_j} 1 \{p_i \leq \tau \}, \;  S^t = \sum_{i < t} 1 \{p_i \leq \tau \}, \;  C_{j+} = \sum_{i = \kappa_j + 1}^{t-1} 1\{p_i \leq \lambda\}$$
+$$\kappa_j = \min\{i \in [t-1] : \sum_{k \leq i}  1 \{p_k \leq \alpha_k\} \geq j\}, \, \kappa_j^* = \sum_{i \leq \kappa_j} 1 \{p_i \leq \tau \}, \, S^t = \sum_{i < t} 1 \{p_i \leq \tau \}, \, C_{j+} = \sum_{i = \kappa_j + 1}^{t-1} 1\{p_i \leq \lambda\}$$
 
 Typically, $\gamma_j \propto j^{-1.6}$ is used as the $\gamma$ sequence.
 
