@@ -104,27 +104,33 @@ Typically, $\gamma_j \propto j^{-1.6}$ is used as the $\gamma$ sequence.
 
 ### Repositories
 
+[Original Repository: 'onlineFDR'](https://github.com/dsrobertson/onlineFDR) [[Robertson2019]](#robertson19)
 [Original Repository: SAFFRON](https://github.com/JINJINT/ADDIS) (see [[RamdasZrnic2018]](#ramdaszrnic2018))<br/>
 [Original Repository: ADDIS](https://github.com/JINJINT/ADDIS) (see [[TianRamdas2019]](#tianramdas2019))
+
+### Miscellaneous
+
+[onlineFDRExplore](https://mrc-bsu.shinyapps.io/onlineFDRexplore/) (based on 'onlineFDR')<br/>
+[onlineFWERExplore](https://mrc-bsu.shinyapps.io/onlineFWERexplore/) (based on 'onlineFDR')
 
 ***
 ***
 
 ## References
 
-<a id="tuckey1991">[Tuckey1991]</a> Tukey, J. W. (1991). The philosophy of multiple comparisons. Statistical Science, 6(1), 100-116.
+<a id="tuckey1991">[Tuckey1991]</a> Tukey, J. W. (1991). **The Philosophy of Multiple Comparisons**. Statistical Science, 6(1), 100-116.
 
-<a id="benjaminihochberg1995">[BenjaminiHochberg1995]</a> Benjamini, Y., & Hochberg, Y. (1995). Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing. Journal of the Royal Statistical Society. Series B (Methodological), 57(1), 289–300.
+<a id="benjaminihochberg1995">[BenjaminiHochberg1995]</a> Benjamini, Y., & Hochberg, Y. (1995). **Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing**. Journal of the Royal Statistical Society. Series B (Methodological), 57(1), 289–300.
 
-<a id="benjaminiyekutieli2001">[BenjaminiYekutieli2001]</a> Benjamini, Y., & Hochberg, Y. (1995). Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing. Journal of the Royal Statistical Society. Series B (Methodological), 57(1), 289–300.
+<a id="benjaminiyekutieli2001">[BenjaminiYekutieli2001]</a> Benjamini, Y., & Hochberg, Y. (1995). **Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing**. Journal of the Royal Statistical Society. Series B (Methodological), 57(1), 289–300.
 
-<a id="benjamini2002">[Benjamini2002]</a> Benjamini, Y., & Braun, H. (2002). John W. Tukey's contributions to multiple comparisons. The Annals of Statistics, 30(6), 1576-1594.
+<a id="benjamini2002">[Benjamini2002]</a> Benjamini, Y., & Braun, H. (2002). **John W. Tukey's contributions to multiple comparisons**. The Annals of Statistics, 30(6), 1576-1594.
 
-<a id="lee2018">[Lee2018]</a> Lee, S., & Lee, D. K. (2018). What is the proper way to apply the multiple comparison test?. Korean journal of anesthesiology, 71(5), 353–360.
+<a id="lee2018">[Lee2018]</a> Lee, S., & Lee, D. K. (2018). **What is the proper way to apply the multiple comparison test?**. Korean journal of anesthesiology, 71(5), 353–360.
 
 <a id="robertson23">[Robertson2023]</a> Robertson, D. S., Wason, J. M. S., & Ramdas, A. (2023). **Online multiple hypothesis testing**. Statistical science : a review journal of the Institute of Mathematical Statistics, 38(4), 557–575.
 
-<a id="robertson19">[Robertson2019]</a> Robertson DS, Liou L, Ramdas A, Karp NA (2022). onlineFDR: Online error control. R package 2.12.0.
+<a id="robertson19">[Robertson2019]</a> Robertson DS, Liou L, Ramdas A, Karp NA (2022). **onlineFDR: Online error control**. R package 2.12.0.
 
 <a id="ramdaszrnic2018">[RamdasZrnic2018]</a> Ramdas, A., Zrnic, T., Wainwright, M.J., & Jordan, M.I. (2018). **SAFFRON: an adaptive algorithm for online control of the false discovery rate**. International Conference on Machine Learning.
 
