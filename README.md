@@ -7,23 +7,31 @@ Extensive collection of resources on the topic of **multiple hypothesis testing*
 
 ### <ins>Philosophical</ins>
 
+[The Philosophy of Multiple Comparisons](https://projecteuclid.org/journals/statistical-science/volume-6/issue-1/The-Philosophy-of-Multiple-Comparisons/10.1214/ss/1177011945.full) [[Tuckey1991]](#tuckey1991)
 
-### <ins>Introductional</ins>
+[John W. Tukey's Contributions to Multiple Comparisons](https://projecteuclid.org/journals/annals-of-statistics/volume-30/issue-6/John-W-Tukeys-contributions-to-multiple-comparisons/10.1214/aos/1043351247.full) [[Benjamini2002]](#benjamini2002)
+
+### <ins>Introductory</ins>
+
+[Multiple Testing](https://www.gs.washington.edu/academics/courses/akey/56008/lecture/lecture10.pdf) (Lecture Slides; [UW Genomics Sciences](https://www.gs.washington.edu/index.htm))
+
+[What is the proper way to apply the multiple comparison test?](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6193594/) [[Lee2018]](#lee2018)
+
 [Online Multiple Hypothesis Testing](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7615519/) [[Robertson2023]](#robertson23)
 
 [The Theory behind 'onineFDR'](https://bioconductor.org/packages/devel/bioc/vignettes/onlineFDR/inst/doc/theory.html#SAFFRON_gamma) (Website; Documentation)
 
-### <ins>Seminal Publications</ins> (Static)
+### <ins>Seminal: _Static_</ins>
 
 #### Bonnferroni-Correction
 
 #### Benjamini-Hochberg Procedure
+[Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing](https://www.jstor.org/stable/2346101) [[BenjaminiHochberg1995]](#benjaminihochberg1995)
 
-#### Benjamini-Hochberg Procedure
+#### Benjamini-Yekutieli Procedure
+[The Control of the False Discovery Rate in Multiple Testing Under Dependency](https://projecteuclid.org/journals/annals-of-statistics/volume-29/issue-4/The-control-of-the-false-discovery-rate-in-multiple-testing/10.1214/aos/1013699998.full) [[BenjaminiYekutieli2001]](#benjaminiyekutieli2001)
 
-#### Benjamini-Hochberg Procedure
-
-### <ins>Seminal Publications</ins> (Sequential)
+### <ins>Seminal: _Sequential_</ins>
 
 #### [SAFFRON](https://proceedings.mlr.press/v80/ramdas18a/ramdas18a.pdf)
 <ins>S</ins>erial estimate of the <ins>A</ins>lpha <ins>F</ins>raction that is <ins>F</ins>utilely <ins>R</ins>ationed <ins>O</ins>n true <ins>N</ins>ull hypotheses
@@ -78,10 +86,16 @@ Typically, $\gamma_j \propto j^{-1.6}$ is used as the $\gamma$ sequence.
 
 </details>
 
+### <ins>Anomaly Detection in Time-Series</ins>
+
+- [Online False Discovery Rate Control for Anomaly Detection in Time-Series](https://proceedings.neurips.cc/paper_files/paper/2021/file/def130d0b67eb38b7a8f4e7121ed432c-Paper.pdf) 🔥
+- [Online FDR Controlled Anomaly Detection for Streaming Time Series](https://kdd-milets.github.io/milets2019/papers/milets19_paper_6.pdf)
+- [FDR Control for Online Anomaly Detection](https://hal.science/hal-04321622)
+
 ***
 
 ## Presentations
-[NIPS21: Online False Discovery Rate Control for Anomaly Detection in Time-Series](https://slideslive.com/38968279/online-false-discovery-rate-control-for-anomaly-detection-in-time-series?ref=speaker-17986)
+- [NIPS21: Online False Discovery Rate Control for Anomaly Detection in Time-Series](https://slideslive.com/38968279/online-false-discovery-rate-control-for-anomaly-detection-in-time-series?ref=speaker-17986)
 
 ***
 
@@ -90,13 +104,23 @@ Typically, $\gamma_j \propto j^{-1.6}$ is used as the $\gamma$ sequence.
 
 ### Repositories
 
-[Original Repository: SAFFRON](https://github.com/JINJINT/ADDIS) (see [[RamdasZrnic2018]](#ramdaszrnic2018))
+[Original Repository: SAFFRON](https://github.com/JINJINT/ADDIS) (see [[RamdasZrnic2018]](#ramdaszrnic2018))<br/>
 [Original Repository: ADDIS](https://github.com/JINJINT/ADDIS) (see [[TianRamdas2019]](#tianramdas2019))
 
 ***
 ***
 
 ## References
+
+<a id="tuckey1991">[Tuckey1991]</a> Tukey, J. W. (1991). The philosophy of multiple comparisons. Statistical Science, 6(1), 100-116.
+
+<a id="benjaminihochberg1995">[BenjaminiHochberg1995]</a> Benjamini, Y., & Hochberg, Y. (1995). Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing. Journal of the Royal Statistical Society. Series B (Methodological), 57(1), 289–300.
+
+<a id="benjaminiyekutieli2001">[BenjaminiYekutieli2001]</a> Benjamini, Y., & Hochberg, Y. (1995). Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing. Journal of the Royal Statistical Society. Series B (Methodological), 57(1), 289–300.
+
+<a id="benjamini2002">[Benjamini2002]</a> Benjamini, Y., & Braun, H. (2002). John W. Tukey's contributions to multiple comparisons. The Annals of Statistics, 30(6), 1576-1594.
+
+<a id="lee2018">[Lee2018]</a> Lee, S., & Lee, D. K. (2018). What is the proper way to apply the multiple comparison test?. Korean journal of anesthesiology, 71(5), 353–360.
 
 <a id="robertson23">[Robertson2023]</a> Robertson, D. S., Wason, J. M. S., & Ramdas, A. (2023). **Online multiple hypothesis testing**. Statistical science : a review journal of the Institute of Mathematical Statistics, 38(4), 557–575.
 
