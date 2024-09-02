@@ -7,26 +7,22 @@ Extensive collection of resources on the topic of **multiple hypothesis testing*
 
 ### 1.1 Philosophical
 
-[The Philosophy of Multiple Comparisons](https://projecteuclid.org/journals/statistical-science/volume-6/issue-1/The-Philosophy-of-Multiple-Comparisons/10.1214/ss/1177011945.full) [[Tuckey1991]](#tuckey1991)
-
-[John W. Tukey's Contributions to Multiple Comparisons](https://projecteuclid.org/journals/annals-of-statistics/volume-30/issue-6/John-W-Tukeys-contributions-to-multiple-comparisons/10.1214/aos/1043351247.full) [[Benjamini2002]](#benjamini2002)
+- [The Philosophy of Multiple Comparisons](https://projecteuclid.org/journals/statistical-science/volume-6/issue-1/The-Philosophy-of-Multiple-Comparisons/10.1214/ss/1177011945.full) [[Tuckey1991]](#tuckey1991)
+- [John W. Tukey's Contributions to Multiple Comparisons](https://projecteuclid.org/journals/annals-of-statistics/volume-30/issue-6/John-W-Tukeys-contributions-to-multiple-comparisons/10.1214/aos/1043351247.full) [[Benjamini2002]](#benjamini2002)
 
 ### 1.2 Introductory
 
-[Multiple Testing](https://www.gs.washington.edu/academics/courses/akey/56008/lecture/lecture10.pdf) (Lecture Slides; [UW Genomics Sciences](https://www.gs.washington.edu/index.htm))
-
-[What is the proper way to apply the multiple comparison test?](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6193594/) [[Lee2018]](#lee2018)
-
-[Online Multiple Hypothesis Testing](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7615519/) [[Robertson2023]](#robertson23)
-
-[The Theory behind 'onineFDR'](https://bioconductor.org/packages/devel/bioc/vignettes/onlineFDR/inst/doc/theory.html#SAFFRON_gamma) (Website; Documentation)
+- [Multiple Testing](https://www.gs.washington.edu/academics/courses/akey/56008/lecture/lecture10.pdf) (Lecture Slides; [UW Genomics Sciences](https://www.gs.washington.edu/index.htm))
+- [What is the proper way to apply the multiple comparison test?](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6193594/) [[Lee2018]](#lee2018)
+- [Online Multiple Hypothesis Testing](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7615519/) [[Robertson2023]](#robertson23)
+- [The Theory behind 'onineFDR'](https://bioconductor.org/packages/devel/bioc/vignettes/onlineFDR/inst/doc/theory.html#SAFFRON_gamma) (Website; Documentation)
 
 ### 1.3 Seminal: _Static_
 
 #### Bonnferroni-Correction
-[Teoria statistica delle classi e calcolo delle probabilità](https://www.jstor.org/stable/23229706)
-[Multiple Comparisons Among Means](https://sci2s.ugr.es/keel/pdf/algorithm/articulo/1961-Bonferroni_Dunn-JASA.pdf) [[Dunn1961]](#dunn1961)
-[The Bonferonni and Šidák Corrections for Multiple Comparisons](https://personal.utdallas.edu/~Herve/Abdi-Bonferroni2007-pretty.pdf)
+- [Teoria statistica delle classi e calcolo delle probabilità](https://www.jstor.org/stable/23229706)
+- [Multiple Comparisons Among Means](https://sci2s.ugr.es/keel/pdf/algorithm/articulo/1961-Bonferroni_Dunn-JASA.pdf) [[Dunn1961]](#dunn1961)
+- [The Bonferonni and Šidák Corrections for Multiple Comparisons](https://personal.utdallas.edu/~Herve/Abdi-Bonferroni2007-pretty.pdf)
 
 <details>
   <summary>Details</summary>
@@ -37,8 +33,7 @@ $$\alpha_i = \frac{\alpha}{k}$$
 
 </details>
 
-#### Benjamini-Hochberg Procedure
-[Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing](https://www.jstor.org/stable/2346101) [[BenjaminiHochberg1995]](#benjaminihochberg1995)
+#### [Benjamini-Hochberg Procedure](https://www.jstor.org/stable/2346101)
 
 <details>
   <summary>Details</summary>
@@ -48,16 +43,17 @@ Algorithm for controlling the FDR in (static) hypothesis testing for _p_-values 
 - Given $\alpha$, sort all _p_-values $P_k$ and find the largest $k$ for $P_k \leq \frac{k}{m} \alpha$.
 - Reject $\mathcal{H}_0$ for all $H_i$ for $i=1, 2, \ldots, k$.
 
+[[BenjaminiHochberg1995]](#benjaminihochberg1995)
+
 </details>
 
-#### Benjamini-Yekutieli Procedure
-[The Control of the False Discovery Rate in Multiple Testing Under Dependency](https://projecteuclid.org/journals/annals-of-statistics/volume-29/issue-4/The-control-of-the-false-discovery-rate-in-multiple-testing/10.1214/aos/1013699998.full) [[BenjaminiYekutieli2001]](#benjaminiyekutieli2001)
+#### [Benjamini-Yekutieli Procedure](https://projecteuclid.org/journals/annals-of-statistics/volume-29/issue-4/The-control-of-the-false-discovery-rate-in-multiple-testing/10.1214/aos/1013699998.full)
 
 <details>
   <summary>Details</summary>
 
 Algorithm for controlling the FDR in (static) hypothesis testing for _p_-values under arbitrary dependence.
-This modifies the threshold as obtained by Benjamini-Hochberg Procedure as follows:
+This modifies the threshold as obtained by Benjamini-Hochberg Procedure [[BenjaminiYekutieli2001]](#benjaminiyekutieli2001) as follows:
 
 $$P_k \leq \frac{k}{m c(m)} \alpha$$
 
@@ -69,7 +65,7 @@ $$P_k \leq \frac{k}{m c(m)} \alpha$$
 ### 1.4 Seminal: _Sequential_
 
 #### [SAFFRON](https://proceedings.mlr.press/v80/ramdas18a/ramdas18a.pdf)
-<ins>S</ins>erial estimate of the <ins>A</ins>lpha <ins>F</ins>raction that is <ins>F</ins>utilely <ins>R</ins>ationed <ins>O</ins>n true <ins>N</ins>ull hypotheses
+<ins>S</ins>erial estimate of the <ins>A</ins>lpha <ins>F</ins>raction that is <ins>F</ins>utilely <ins>R</ins>ationed <ins>O</ins>n true <ins>N</ins>ull hypotheses. [[RamdasZrnic2018]](#ramdaszrnic2018)
 
 <details>
   <summary>Details</summary>
@@ -100,7 +96,7 @@ Typically, $\gamma_j \propto j^{-1.6}$ is used as the $\gamma$ sequence.
 </details>
 
 #### [ADDIS](https://proceedings.neurips.cc/paper_files/paper/2019/file/1d6408264d31d453d556c60fe7d0459e-Paper.pdf)
-An <ins>AD</ins>aptive algorithm that <ins>DIS</ins>cards conservative nulls.
+An <ins>AD</ins>aptive algorithm that <ins>DIS</ins>cards conservative nulls. [[TianRamdas2019]](#tianramdas2019)
 
 <details>
   <summary>Details</summary>
@@ -139,14 +135,14 @@ Typically, $\gamma_j \propto j^{-1.6}$ is used as the $\gamma$ sequence.
 
 ### 3.1 Repositories
 
-[Original Repository: 'onlineFDR'](https://github.com/dsrobertson/onlineFDR) [[Robertson2019]](#robertson19)
-[Original Repository: SAFFRON](https://github.com/JINJINT/ADDIS) (see [[RamdasZrnic2018]](#ramdaszrnic2018))<br/>
-[Original Repository: ADDIS](https://github.com/JINJINT/ADDIS) (see [[TianRamdas2019]](#tianramdas2019))
+- [Original Repository: 'onlineFDR'](https://github.com/dsrobertson/onlineFDR) [[Robertson2019]](#robertson19)
+- [Original Repository: SAFFRON](https://github.com/JINJINT/ADDIS) (see [[RamdasZrnic2018]](#ramdaszrnic2018))<br/>
+- [Original Repository: ADDIS](https://github.com/JINJINT/ADDIS) (see [[TianRamdas2019]](#tianramdas2019))
 
 ### 3.2 Miscellaneous
 
-[onlineFDRExplore](https://mrc-bsu.shinyapps.io/onlineFDRexplore/) (based on 'onlineFDR')<br/>
-[onlineFWERExplore](https://mrc-bsu.shinyapps.io/onlineFWERexplore/) (based on 'onlineFDR')
+- [onlineFDRExplore](https://mrc-bsu.shinyapps.io/onlineFDRexplore/) (based on 'onlineFDR')<br/>
+- [onlineFWERExplore](https://mrc-bsu.shinyapps.io/onlineFWERexplore/) (based on 'onlineFDR')
 
 ***
 ***
