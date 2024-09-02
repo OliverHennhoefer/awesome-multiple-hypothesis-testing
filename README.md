@@ -46,14 +46,11 @@ with $C_t = 1\{p_t \leq \lambda \}$ as the indicator for candidacy.
 
 - Subsequent test levels are chosen as $\alpha_t = \min\{ \lambda, \tilde{\alpha}_t\}$ with the exception
 
-$$\alpha_1 = \min\{(1 - \lambda)\gamma_1 w_0, \lambda\}
+$$\alpha_1 = \min\{(1 - \lambda)\gamma_1 w_0, \lambda\}$$
 
 and subsequent
 
-$$\tilde{\alpha}_t = (1 - \lambda) [w_0 \gamma_{t-C_{0+}} +
-(\alpha - w_0)\gamma_{t-\tau_1-C_{1+}} +
-\alpha \sum_{j \geq 2}
-\gamma_{t - \tau_j- C_{j+}}]$$
+$$\tilde{\alpha}_t = (1 - \lambda) [w_0 \gamma_{t-C_{0+}} + (\alpha - w_0)\gamma_{t-\tau_1-C_{1+}} +  \alpha \sum_{j \geq 2}  \gamma_{t - \tau_j- C_{j+}}]$$
 
 Typically, $\gamma_j \propto j^{-1.6}$ is used as the $\gamma$ sequence.
 
@@ -73,15 +70,9 @@ As for SAFFRON, the parameter $\lambda \in [0,\tau)$  defines the threshold for 
 
 $$\alpha_t = \min\{\lambda, \tilde{\alpha}_t\}$$
 
-$$\tilde{\alpha}_t = (\tau - \lambda)[w_0 \gamma_{S^t-C_{0+}} + 
-(\alpha - w_0)\gamma_{S^t - \kappa_1^*-C_{1+}} +
-\alpha \sum_{j \geq 2} \gamma_{S^t - \kappa_j^* - C_{j+}}$$
+$$\tilde{\alpha}_t = (\tau - \lambda)[w_0 \gamma_{S^t-C_{0+}} + (\alpha - w_0)\gamma_{S^t - \kappa_1^*-C_{1+}} +  \alpha \sum_{j \geq 2} \gamma_{S^t - \kappa_j^* - C_{j+}}$$
 
-$$\kappa_j = \min\{i \in [t-1] : \sum_{k \leq i}
-1 \{p_k \leq \alpha_k\} \geq j\}, \;
-\kappa_j^* = \sum_{i \leq \kappa_j} 1 \{p_i \leq \tau \}, \;
-S^t = \sum_{i < t} 1 \{p_i \leq \tau \}, \;
-C_{j+} = \sum_{i = \kappa_j + 1}^{t-1} 1\{p_i \leq \lambda\}$$
+$$\kappa_j = \min\{i \in [t-1] : \sum_{k \leq i}  1 \{p_k \leq \alpha_k\} \geq j\}, \;  \kappa_j^* = \sum_{i \leq \kappa_j} 1 \{p_i \leq \tau \}, \;  S^t = \sum_{i < t} 1 \{p_i \leq \tau \}, \;  C_{j+} = \sum_{i = \kappa_j + 1}^{t-1} 1\{p_i \leq \lambda\}$$
 
 Typically, $\gamma_j \propto j^{-1.6}$ is used as the $\gamma$ sequence.
 
