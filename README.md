@@ -24,12 +24,47 @@ Extensive collection of resources on the topic of **multiple hypothesis testing*
 ### 1.3 Seminal: _Static_
 
 #### Bonnferroni-Correction
+[Teoria statistica delle classi e calcolo delle probabilità](https://www.jstor.org/stable/23229706)
+[Multiple Comparisons Among Means](https://sci2s.ugr.es/keel/pdf/algorithm/articulo/1961-Bonferroni_Dunn-JASA.pdf) [[Dunn1961]](#dunn1961)
+[The Bonferonni and Šidák Corrections for Multiple Comparisons](https://personal.utdallas.edu/~Herve/Abdi-Bonferroni2007-pretty.pdf)
+
+<details>
+  <summary>Details</summary>
+
+Algorithm for controlling the FWER in (static) hypothesis testing. The adjusted threshold $\alpha_i$ for $k$ tested hypotheses is calculated as:
+
+$$\alpha_i = \frac{\alpha}{k}$$
+
+</details>
 
 #### Benjamini-Hochberg Procedure
 [Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing](https://www.jstor.org/stable/2346101) [[BenjaminiHochberg1995]](#benjaminihochberg1995)
 
+<details>
+  <summary>Details</summary>
+
+Algorithm for controlling the FDR in (static) hypothesis testing for _p_-values that are independent or with positive regression dependency on subsets:
+
+- Given $\alpha$, sort all _p_-values $P_k$ and find the largest $k$ for $P_k \leq \frac{k}{m} \alpha$.
+- Reject $\mathcal{H}_0$ for all $H_i$ for $i=1, 2, \ldots, k$.
+
+</details>
+
 #### Benjamini-Yekutieli Procedure
 [The Control of the False Discovery Rate in Multiple Testing Under Dependency](https://projecteuclid.org/journals/annals-of-statistics/volume-29/issue-4/The-control-of-the-false-discovery-rate-in-multiple-testing/10.1214/aos/1013699998.full) [[BenjaminiYekutieli2001]](#benjaminiyekutieli2001)
+
+<details>
+  <summary>Details</summary>
+
+Algorithm for controlling the FDR in (static) hypothesis testing for _p_-values under arbitrary dependence.
+This modifies the threshold as obtained by Benjamini-Hochberg Procedure as follows:
+
+$$P_k \leq \frac{k}{m c(m)} \alpha$$
+
+- The standard Benjamini-Hochberg Procedure can be recovered by $c(m)=1$ for independent or positively correlated _p_-values.
+- Under arbitrary dependence $c(m)$ is defined as the _Harmonic_ number $c(m)=\sum^{m}{i=1}\frac{1}{i}$.
+
+</details>
 
 ### 1.4 Seminal: _Sequential_
 
@@ -117,6 +152,7 @@ Typically, $\gamma_j \propto j^{-1.6}$ is used as the $\gamma$ sequence.
 ***
 
 ## 4 References
+<a id="dunn1961">[Dunn1961]</a> Dunn, O. J. (1961). **Multiple Comparisons Among Means**. Journal of the American Statistical Association, 56(293), 52–64.
 
 <a id="tuckey1991">[Tuckey1991]</a> Tukey, J. W. (1991). **The Philosophy of Multiple Comparisons**. Statistical Science, 6(1), 100-116.
 
