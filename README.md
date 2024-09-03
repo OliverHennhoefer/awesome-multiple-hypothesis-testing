@@ -117,9 +117,16 @@ Typically, $\gamma_j \propto j^{-1.6}$ is used as the $\gamma$ sequence.
 
 </details>
 
-### 1.5 Anomaly Detection in Time-Series
+### 1.5 Seminal: _Batching_
 
-- [Online False Discovery Rate Control for Anomaly Detection in Time-Series](https://proceedings.neurips.cc/paper_files/paper/2021/file/def130d0b67eb38b7a8f4e7121ed432c-Paper.pdf) 🔥
+[Batch$_{\text{BH}}$ and Batch$_{\text{Storey-BH}}$](https://par.nsf.gov/servlets/purl/10251949)
+
+Interpolation algorithm between existing pure sequential (online) and static (offline) methods providing a trade-off between statistical power and temporal application. [[Zrnic2020]](#zrnic2020)
+
+### 1.6 Applications and Modifications
+
+#### 1.6.1 Anomaly Detection
+- [Online False Discovery Rate Control for Anomaly Detection in Time-Series](https://proceedings.neurips.cc/paper_files/paper/2021/file/def130d0b67eb38b7a8f4e7121ed432c-Paper.pdf)
 - [Online FDR Controlled Anomaly Detection for Streaming Time Series](https://kdd-milets.github.io/milets2019/papers/milets19_paper_6.pdf)
 - [FDR Control for Online Anomaly Detection](https://hal.science/hal-04321622)
 
@@ -136,12 +143,13 @@ Typically, $\gamma_j \propto j^{-1.6}$ is used as the $\gamma$ sequence.
 ### 3.1 Repositories
 
 - [Original Repository: 'onlineFDR'](https://github.com/dsrobertson/onlineFDR) [[Robertson2019]](#robertson19)
-- [Original Repository: SAFFRON](https://github.com/JINJINT/ADDIS) (see [[RamdasZrnic2018]](#ramdaszrnic2018))<br/>
+- [Original Repository: SAFFRON](https://github.com/JINJINT/ADDIS) (see [[RamdasZrnic2018]](#ramdaszrnic2018))
 - [Original Repository: ADDIS](https://github.com/JINJINT/ADDIS) (see [[TianRamdas2019]](#tianramdas2019))
+- [Original Repository: Batching](https://github.com/jiangdaniel/BatchBH/blob/master/online.py) (see [[Zrnic2020]](#zrnic2020))
 
 ### 3.2 Miscellaneous
 
-- [onlineFDRExplore](https://mrc-bsu.shinyapps.io/onlineFDRexplore/) (based on 'onlineFDR')<br/>
+- [onlineFDRExplore](https://mrc-bsu.shinyapps.io/onlineFDRexplore/) (based on 'onlineFDR')
 - [onlineFWERExplore](https://mrc-bsu.shinyapps.io/onlineFWERexplore/) (based on 'onlineFDR')
 
 ***
@@ -167,3 +175,5 @@ Typically, $\gamma_j \propto j^{-1.6}$ is used as the $\gamma$ sequence.
 <a id="ramdaszrnic2018">[RamdasZrnic2018]</a> Ramdas, A., Zrnic, T., Wainwright, M.J., & Jordan, M.I. (2018). **SAFFRON: an adaptive algorithm for online control of the false discovery rate**. International Conference on Machine Learning.
 
 <a id="tianramdas2019">[TianRamdas2019]</a> Tian, J., & Ramdas, A. (2019). **ADDIS: An adaptive discarding algorithm for online FDR control with conservative nulls**. In H. Wallach, H. Larochelle, A. Beygelzimer, F. d'Alché-Buc, E. Fox, & R. Garnett (Eds.), Advances in Neural Information Processing Systems (Vol. 32). Curran Associates, Inc.
+
+<a id="zrnic2020">[Zrnic2020]</a> Zrnic, T., Jiang, D., Ramdas, A., & Jordan, M.I. (2019). **The Power of Batching in Multiple Hypothesis Testing**. International Conference on Artificial Intelligence and Statistics.
