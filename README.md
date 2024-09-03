@@ -1,4 +1,4 @@
-# Awesome Multiple Hypothesis Testing
+# Awesome Multiple Hypothesis Testing [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 Extensive collection of resources on the topic of **multiple hypothesis testing**.
 
 ***
@@ -139,6 +139,8 @@ Interpolation algorithm between existing pure sequential (online) and static (of
 
 ## 3 Software Packages
 [R: onlineFDR](https://academic.oup.com/bioinformatics/article/35/20/4196/5380770) [[Robertson2019]](#robertson19)
+[Python: multipy](https://github.com/puolival/multipy) [[Puoliväli2020]](#puoliväli2020)
+[Python: statsmodels](https://www.statsmodels.org/dev/generated/statsmodels.stats.multitest.multipletests.html) [[Seabold2010]](#seabold2010)
 
 ### 3.1 Repositories
 
@@ -152,7 +154,6 @@ Interpolation algorithm between existing pure sequential (online) and static (of
 - [onlineFDRExplore](https://mrc-bsu.shinyapps.io/onlineFDRexplore/) (based on 'onlineFDR')
 - [onlineFWERExplore](https://mrc-bsu.shinyapps.io/onlineFWERexplore/) (based on 'onlineFDR')
 
-***
 ***
 
 ## 4 References
@@ -171,6 +172,10 @@ Interpolation algorithm between existing pure sequential (online) and static (of
 <a id="robertson23">[Robertson2023]</a> Robertson, D. S., Wason, J. M. S., & Ramdas, A. (2023). **Online multiple hypothesis testing**. Statistical science : a review journal of the Institute of Mathematical Statistics, 38(4), 557–575.
 
 <a id="robertson19">[Robertson2019]</a> Robertson DS, Liou L, Ramdas A, Karp NA (2022). **onlineFDR: Online error control**. R package 2.12.0.
+
+<a id="puoliväli2020">[Puoliväli2020]</a> Puoliväli T, Palva S, Palva JM (2020): **Influence of multiple hypothesis testing on reproducibility in neuroimaging research: A simulation study and Python-based software**. Journal of Neuroscience Methods 337:108654.
+
+<a id="seabold2010">[Seabold2010]</a> Seabold, Skipper, and Josef Perktold. **“statsmodels: Econometric and statistical modeling with python.”** Proceedings of the 9th Python in Science Conference. 2010.
 
 <a id="ramdaszrnic2018">[RamdasZrnic2018]</a> Ramdas, A., Zrnic, T., Wainwright, M.J., & Jordan, M.I. (2018). **SAFFRON: an adaptive algorithm for online control of the false discovery rate**. International Conference on Machine Learning.
 
