@@ -14,6 +14,8 @@ The README is the authoritative reading map. The automation checks its formattin
 
 The quality workflow runs on pushes to main, pull requests, and manual dispatch. The network workflow also runs every Monday. Action revisions and npm dependencies are pinned; Dependabot proposes monthly updates. Workflow permissions are read-only, checkout does not persist credentials, and no workflow opens issues or posts comments.
 
+Awesome lint's GitHub metadata rule reads the default branch's detected license and repository topics. These checks are advisory on pull requests because an unmerged license cannot appear in that response. They remain enforced on pushes to main and manual runs. File-based license and formatting checks remain mandatory on every run; the PR log shows any outstanding metadata warnings.
+
 Use the unmodified [official Awesome badge](https://github.com/sindresorhus/awesome/blob/main/awesome.md#awesome-badge). The [upstream guidelines](https://github.com/sindresorhus/awesome/blob/main/pull_request_template.md) explicitly prohibit CI badges, so CI exists without adding one to the README.
 
 ## Interpreting Link Failures

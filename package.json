@@ -8,7 +8,7 @@
     "node": ">=22"
   },
   "scripts": {
-    "lint": "awesome-lint README.md && markdownlint-cli2",
+    "lint": "node scripts/lint_awesome.mjs && markdownlint-cli2",
     "test": "python3 -m unittest discover -s tests -v && python3 scripts/check_references.py",
     "check": "npm run lint && npm test",
     "check:references": "python3 scripts/check_references.py --online",
