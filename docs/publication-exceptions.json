@@ -1,0 +1,44 @@
+{
+  "https://doi.org/10.1093/biostatistics/kxw041": {
+    "kind": "metadata-correction",
+    "year": 2017,
+    "reason": "Crossref currently exposes only the 2016 online-publication date. The published article, archived in PubMed Central, identifies Biostatistics volume 18, issue 2, April 2017, pages 275–294.",
+    "evidence": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC5379932/"
+    ]
+  },
+  "https://doi.org/10.1002/9780470316672": {
+    "kind": "monograph",
+    "reason": "Hochberg and Tamhane's established reference on multiple-comparison theory; Hochberg developed the step-up procedure and co-developed BH.",
+    "evidence": [
+      "https://doi.org/10.1002/9780470316672",
+      "https://doi.org/10.1093/biomet/75.4.800",
+      "https://doi.org/10.1111/j.2517-6161.1995.tb02031.x"
+    ]
+  },
+  "https://www.wiley.com/en-us/resampling-based-multiple-testing-examples-and-methods-for-p-value-adjustment-p-9780471557616": {
+    "kind": "monograph",
+    "reason": "Foundational Westfall–Young treatment of resampling-based multiple testing by the method's developers.",
+    "evidence": [
+      "https://www.wiley.com/en-us/resampling-based-multiple-testing-examples-and-methods-for-p-value-adjustment-p-9780471557616",
+      "https://doi.org/10.1002/bimj.200710456"
+    ]
+  },
+  "https://doi.org/10.1007/978-0-387-49317-6": {
+    "kind": "monograph",
+    "reason": "Dudoit and van der Laan's specialist research monograph; Dudoit's foundational multiple-testing review is included in the list.",
+    "evidence": [
+      "https://link.springer.com/book/10.1007/978-0-387-49317-6",
+      "https://doi.org/10.1214/ss/1056397487"
+    ]
+  },
+  "https://doi.org/10.1017/cbo9780511761362": {
+    "kind": "monograph",
+    "reason": "Efron's authoritative synthesis of empirical Bayes and large-scale inference, supported by his foundational local-FDR and empirical-null papers.",
+    "evidence": [
+      "https://www.cambridge.org/core/books/largescale-inference/A0B183B0080A92966497F12CE5D12589",
+      "https://doi.org/10.1198/016214501753382129",
+      "https://doi.org/10.1198/016214504000000089"
+    ]
+  }
+}
