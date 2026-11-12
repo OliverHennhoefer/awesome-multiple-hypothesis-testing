@@ -141,6 +141,7 @@ Interpolation algorithm between existing pure sequential (online) and static (of
 [R: onlineFDR](https://academic.oup.com/bioinformatics/article/35/20/4196/5380770) [[Robertson2019]](#robertson19)
 [Python: multipy](https://github.com/puolival/multipy) [[Puoliväli2020]](#puoliväli2020)
 [Python: statsmodels](https://www.statsmodels.org/dev/generated/statsmodels.stats.multitest.multipletests.html) [[Seabold2010]](#seabold2010)
+[Python: agentstats](https://github.com/RishabhPande/agentstats) - Python analysis of repeated agent-benchmark runs with Holm-corrected pairwise comparisons and statistical leaderboard tiers.
 
 ### 3.1 Repositories
 
