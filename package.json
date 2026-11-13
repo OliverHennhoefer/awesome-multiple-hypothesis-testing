@@ -1,0 +1,22 @@
+{
+  "name": "awesome-multiple-hypothesis-testing",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Validation tools for Awesome Multiple Hypothesis Testing",
+  "license": "CC0-1.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "lint": "node scripts/lint_awesome.mjs && markdownlint-cli2",
+    "test": "python3 -m unittest discover -s tests -v && python3 scripts/check_references.py",
+    "check": "npm run lint && npm test",
+    "check:references": "python3 scripts/check_references.py --online",
+    "check:links": "lychee --config lychee.toml README.md CONTRIBUTING.md docs/*.md docs/publication-exceptions.json .github/PULL_REQUEST_TEMPLATE.md",
+    "check:links:offline": "lychee --offline --config lychee.toml README.md CONTRIBUTING.md docs/*.md docs/publication-exceptions.json .github/PULL_REQUEST_TEMPLATE.md"
+  },
+  "devDependencies": {
+    "awesome-lint": "2.3.0",
+    "markdownlint-cli2": "0.24.1"
+  }
+}
